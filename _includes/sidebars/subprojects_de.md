@@ -1,0 +1,5 @@
+* [Arbeitspaket 1]({{ site.url }}{{ site.baseurl }}{% link de/subprojects/subproject_1.md %})
+* [Arbeitspaket 2]({{ site.url }}{{ site.baseurl }}{% link de/subprojects/subproject_2.md %})
+* [Arbeitspaket 3]({{ site.url }}{{ site.baseurl }}{% link de/subprojects/subproject_3.md %})
+* [Arbeitspaket 4]({{ site.url }}{{ site.baseurl }}{% link de/subprojects/subproject_4.md %})
+* [Arbeitspaket 5]({{ site.url }}{{ site.baseurl }}{% link de/subprojects/subproject_5.md %})

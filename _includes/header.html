@@ -1,0 +1,68 @@
+{% if page.lang == 'en' %}
+{% capture subprojects_en %}{% include sidebars/subprojects_en.md %}{% endcapture %}
+{% else %}
+{% capture subprojects_de %}{% include sidebars/subprojects_de.md %}{% endcapture %}
+{% endif %}
+
+<header class="page-header">
+  <div class="container">
+    <div class="mobile-bar">
+      {% if page.lang == 'en' %}
+      <h1 class="logo">
+        <a href="{{ site.url }}{{ site.baseurl }}">
+          <img 
+          src="{{ site.url }}{{ site.baseurl }}/assets/img/inside_logo.png" 
+          alt="INSIDe"></a>
+      </h1>
+      {% else %}
+      <h1 class="logo">
+        <a href="{{ site.url }}{{ site.baseurl }}/de">
+          <img 
+          src="{{ site.url }}{{ site.baseurl }}/assets/img/inside_logo.png" 
+          alt="INSIDe"></a>
+      </h1>      
+      {% endif %}
+    </div>
+    <nav class="main-menu">
+      <ul class="main-nav">
+        {% if page.lang == 'en' %}
+          <li>
+            <a href="{{ site.url }}{{ site.baseurl }}{% link en/index.md %}">Home</a>
+          </li>
+          <li>
+            <a href="{{ site.url }}{{ site.baseurl }}{% link en/news/index.md %}">News</a>
+          </li>
+          <li>
+            <a href="{{ site.url }}{{ site.baseurl }}{% link en/subprojects/index.md %}">Subprojects</a>
+            {{ subprojects_en | markdownify }}
+          </li>
+          <li>
+            <a href="{{ site.url }}{{ site.baseurl }}{% link en/projectpartners/index.md %}">Project Partners</a>
+          </li>
+          <li>
+            <a href="{{ site.url }}{{ site.baseurl }}{% link en/funding/index.md %}">Funding</a>
+          </li>
+        {% else %}
+          <li>
+            <a href="{{ site.url }}{{ site.baseurl }}{% link de/index.md %}">Home</a>
+
+          </li>
+          <li>
+            <a href="{{ site.url }}{{ site.baseurl }}{% link de/news/index.md %}">Aktuelles</a>
+          </li>
+          <li>
+            <a href="{{ site.url }}{{ site.baseurl }}{% link de/subprojects/index.md %}">Arbeitspakete</a>
+            {{ subprojects_de | markdownify }}
+          </li>
+          <li>
+            <a href="{{ site.url }}{{ site.baseurl }}{% link de/projectpartners/index.md %}">Projektpartner</a>
+          </li>
+          <li>
+            <a href="{{ site.url }}{{ site.baseurl }}{% link de/funding/index.md %}">Finanzierung</a>
+          </li>
+        {% endif %}
+        
+      </ul>
+    </nav>
+  </div><!-- /.container -->
+</header><!-- /.page-header -->
