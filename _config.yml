@@ -4,8 +4,8 @@ description: ...
 author:
   name: ...
 
-baseurl: "/inside.github.io"
-url: "https://schminin.github.io"
+baseurl: ""
+url: "www.inside-consortium.de"
 
 destination: .tmp
 include:
