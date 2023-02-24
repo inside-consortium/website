@@ -4,9 +4,6 @@ description: ...
 author:
   name: ...
 
-baseurl: ""
-url: "www.inside-consortium.de"
-
 destination: .tmp
 include:
 - _redirects
